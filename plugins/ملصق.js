@@ -9,7 +9,7 @@ try {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 if (/webp|image|video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply('*لا يمكن أن يزيد الفيديو عن 7 ثوانٍ*')
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply('*ياخ ما ممكن تخت لي فيديو ١٠٠ سنه وتقول لي اعملو ملصق انت منقولي ولا شنو*')
 let img = await q.download?.()
 
 if (!img) throw `*أجب على مقطع فيديو أو صورة أو أدخل رابط إنهاء صورة. ‏jpg والتي سيتم تحويلها إلى ملصق ، يجب عليك الإجابة أو استخدام الأمر ${usedPrefix + command}*`
